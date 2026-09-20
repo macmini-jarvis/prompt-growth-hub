@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="한국어 ChatGPT 프롬프트를 추천만 모으지 말고 입력값·역할·검수까지 쓰는 실전 방법. 예시 프롬프트 포함." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#1a1a2e" />
+  <link rel="canonical" href="https://macmini-jarvis.github.io/prompt-growth-hub/articles/chatgpt-prompt-recommend/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:title" content="ChatGPT 프롬프트 추천 · 제대로 쓰는 법 (2026)" />
+  <meta property="og:description" content="한국어 ChatGPT 프롬프트를 추천만 모으지 말고 입력값·역할·검수까지 쓰는 실전 방법. 예시 프롬프트 포함." />
+  <meta property="og:url" content="https://macmini-jarvis.github.io/prompt-growth-hub/articles/chatgpt-prompt-recommend/" />
+  <meta property="og:site_name" content="프롬프트 성장 허브" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="ChatGPT 프롬프트 추천 · 제대로 쓰는 법 (2026)" />
+  <meta name="twitter:description" content="한국어 ChatGPT 프롬프트를 추천만 모으지 말고 입력값·역할·검수까지 쓰는 실전 방법. 예시 프롬프트 포함." />
+  <title>ChatGPT 프롬프트 추천 · 제대로 쓰는 법 (2026)</title>
+  <link rel="stylesheet" href="../../assets/style.css" />
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav" aria-label="주요 메뉴">
+    <a class="brand" href="../../index.html">프롬프트 성장 허브</a>
+    <div class="links">
+      <a href="../../free-sample/">무료 샘플</a>
+      <a href="../../index.html#articles">가이드</a>
+      <a href="https://macmini-jarvis.github.io/chatgpt-prompts-pack-store/" rel="noopener">스토어</a>
+    </div>
+  </nav>
+
+  <article class="card" style="margin-top:16px">
+    <p class="article-meta">실전 가이드 · 한국어 · 검수 필수</p>
+    <h1>ChatGPT 프롬프트 추천, 모으기만 하지 말고 이렇게 쓰세요</h1>
+    
+<p>인터넷에 'ChatGPT 프롬프트 추천' 글은 많지만, 복사해서 붙였더니 결과가 흐릿했던 경험이 있으실 겁니다. 문제는 프롬프트 문장 자체가 아니라 <strong>입력값·역할·출력 형식·검수</strong>가 빠진 경우가 대부분입니다.</p>
+
+<h2>1. 좋은 프롬프트의 최소 구성</h2>
+<ul>
+  <li><strong>역할</strong>: 누구처럼 답할지 (예: 한국 이커머스 카피라이터)</li>
+  <li><strong>입력값</strong>: 업종, 타깃, 톤, 금지 표현</li>
+  <li><strong>출력 형식</strong>: 개수, 글자 수, 표/번호 목록</li>
+  <li><strong>제약</strong>: 과장 금지, 개인정보 제외, 해요체 등</li>
+</ul>
+<p>이 네 가지가 있으면 같은 ChatGPT라도 결과 편차가 눈에 띄게 줄어듭니다. '잘 써줘' 한 줄보다 <code>{{업종}}</code>·<code>{{타깃}}</code>을 채우는 습관이 더 중요합니다.</p>
+
+<h2>2. 추천 프롬프트를 고르는 기준</h2>
+<p>추천 리스트를 볼 때 아래를 체크하세요.</p>
+<ol>
+  <li>한국 비즈니스 맥락인가? (존댓말·광고 규정·실무 톤)</li>
+  <li>자리표시자(<code>{{ }}</code>)가 있어 재사용 가능한가?</li>
+  <li>출력 검수 포인트가 있는가? (사실·수치·정책)</li>
+  <li>한 번에 너무 많은 일을 시키지 않는가?</li>
+</ol>
+<p>한 프롬프트에 '캡션+상세+메일+전략'을 몰아넣으면 품질이 떨어집니다. <strong>작업 단위로 쪼개고</strong>, 마음에 드는 톤이 나오면 '위 톤 유지해서'로 이어가는 편이 낫습니다.</p>
+
+<h2>3. 예시 프롬프트 — 범용 초안 생성</h2>
+<div class="prompt-box">당신은 한국 1인 사업자를 돕는 실무 라이터입니다.
+아래 작업의 초안만 작성하고, 사실 여부는 사용자가 검수한다고 가정하세요.
+
+[작업 유형]: {캡션 / 상세 헤드라인 / 메일 / 리뷰답글}
+[업종]: {업종}
+[타깃]: {타깃}
+[핵심 메시지]: {메시지}
+[톤]: {톤}
+[금지]: 매출 보장, 허위 할인, 개인정보 추측
+
+출력: 초안 3안 + 각 안이 맞는 상황 한 줄</div>
+
+<h2>4. 예시 프롬프트 — 결과물 다듬기</h2>
+<div class="prompt-box">아래 초안을 더 짧게, 더 구체적으로 다듬어 주세요.
+- 유지: 핵심 혜택, 톤
+- 삭제: 추상어(혁신적, 최고의 등)
+- 추가: 구체 숫자·상황(실제 있는 것만, 없으면 [확인필요] 표시)
+
+[초안]:
+{붙여넣기}</div>
+
+<h2>5. 검수 체크리스트 (필수)</h2>
+<ul>
+  <li>숫자·기간·환불 정책이 실제와 같은가?</li>
+  <li>경쟁사·인증·효과를 과장하지 않았는가?</li>
+  <li>고객 이름·연락처 등 개인정보가 들어가지 않았는가?</li>
+  <li>브랜드 톤과 맞는가? (너무 AI스럽지 않은가?)</li>
+</ul>
+<p>프롬프트는 <strong>초안 엔진</strong>이지 최종 발행기가 아닙니다. 특히 광고·의료·금융·법률성 문구는 별도 확인이 필요합니다.</p>
+
+<h2>6. 다음에 볼 가이드</h2>
+<p>상황별로 더 깊게 다룬 글입니다. 내부 링크로 이동해 보세요.</p>
+
+    
+<h2>7. 자주 하는 실수 다섯 가지</h2>
+<p>첫 번째는 역할 없이 시키는 것입니다. '카피 써줘'만 하면 모델이 임의의 톤을 고릅니다. 두 번째는 입력값을 비운 채 중괄호를 그대로 넣는 경우입니다. 세 번째는 한 번에 너무 많은 산출물을 요구하는 것입니다. 네 번째는 검수 없이 바로 발행하는 습관입니다. 다섯 번째는 프롬프트만 모으고 실제 업무 시나리오에 연결하지 않는 것입니다.</p>
+<p>실무에서는 주간 단위로 '이번 주에 반복한 작업'을 적어 두고, 그 작업마다 프롬프트 하나를 고정하는 방식이 효과적입니다. 예를 들어 월요일 캡션, 수요일 리뷰답글, 금요일 상세 수정처럼 리듬을 만들면 ChatGPT가 도구로 자리 잡습니다.</p>
+<h2>8. 1인 사업자 추천 시작 세트</h2>
+<p>처음부터 80개를 다 쓸 필요는 없습니다. 먼저 인스타 캡션, 릴스 훅, 상세 헤드라인, 긍정 리뷰 답글, 업무 메일 다섯 가지만 익혀도 체감이 큽니다. 이 허브의 <a href="../../free-sample/">무료 샘플</a>이 바로 그 구성입니다. 익숙해지면 SNS 미니팩이나 풀팩으로 확장하면 됩니다.</p>
+<p>프롬프트를 '추천 목록'으로만 소비하지 말고, 본인 업종의 실제 상품명·실제 정책·실제 타깃 문장을 채워 보세요. 그때부터 결과물이 업무에 붙기 시작합니다. 매출을 약속하는 문구는 어디에도 넣지 마세요. 도구의 목적은 속도이지 보장된 성과가 아닙니다.</p>
+
+    <h2>관련 가이드</h2>
+    <div class="related"><a href="../instagram-caption-reels-hook/">인스타 캡션·릴스 훅</a><a href="../product-detail-copy-prompt/">상세페이지 카피</a><a href="../blog-seo-structure/">블로그 SEO 구조</a></div>
+    
+<div class="cta-box">
+  <p><strong>더 많은 실전 프롬프트가 필요하신가요?</strong><br>
+  무료 샘플로 먼저 써 보고, 풀팩은 스토어에서 계좌이체로 구매할 수 있습니다.</p>
+  <div class="cta-row">
+    <a class="btn btn-gold" href="https://macmini-jarvis.github.io/prompt-growth-hub/free-sample/">무료 샘플 받기</a>
+    <a class="btn btn-primary" href="https://macmini-jarvis.github.io/chatgpt-prompts-pack-store/" rel="noopener">스토어 바로가기</a>
+  </div>
+  <p class="muted" style="margin-top:10px;font-size:0.85rem">SKU: SNS30 4,900 / PROMPT80 9,900 / PROMPT80PLUS 19,900 · 계좌이체</p>
+</div>
+
+    <p class="disclaimer">본 글은 업무 도구 사용법 안내이며 매출·노출·수익을 보장하지 않습니다. 가짜 후기·과장 광고를 포함하지 않습니다.</p>
+  </article>
+
+  <footer class="footer">
+    <p>프롬프트 성장 허브 · 매출·수익을 보장하지 않습니다. AI 출력은 검수 후 사용하세요.</p>
+    <p style="margin-top:8px">
+      <a href="../../free-sample/">무료 샘플</a> ·
+      <a href="https://macmini-jarvis.github.io/chatgpt-prompts-pack-store/" rel="noopener">유료 팩 스토어</a>
+    </p>
+  </footer>
+</div>
+
+</body>
+</html>

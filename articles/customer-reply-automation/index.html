@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="긍정·부정 리뷰 답글과 고객 문의 초안을 ChatGPT로 자동화하는 방법. 톤 유지·검수 팁과 예시 프롬프트." />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#1a1a2e" />
+  <link rel="canonical" href="https://macmini-jarvis.github.io/prompt-growth-hub/articles/customer-reply-automation/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:title" content="고객응대·리뷰답글 자동화 ChatGPT 프롬프트" />
+  <meta property="og:description" content="긍정·부정 리뷰 답글과 고객 문의 초안을 ChatGPT로 자동화하는 방법. 톤 유지·검수 팁과 예시 프롬프트." />
+  <meta property="og:url" content="https://macmini-jarvis.github.io/prompt-growth-hub/articles/customer-reply-automation/" />
+  <meta property="og:site_name" content="프롬프트 성장 허브" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="고객응대·리뷰답글 자동화 ChatGPT 프롬프트" />
+  <meta name="twitter:description" content="긍정·부정 리뷰 답글과 고객 문의 초안을 ChatGPT로 자동화하는 방법. 톤 유지·검수 팁과 예시 프롬프트." />
+  <title>고객응대·리뷰답글 자동화 ChatGPT 프롬프트</title>
+  <link rel="stylesheet" href="../../assets/style.css" />
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav" aria-label="주요 메뉴">
+    <a class="brand" href="../../index.html">프롬프트 성장 허브</a>
+    <div class="links">
+      <a href="../../free-sample/">무료 샘플</a>
+      <a href="../../index.html#articles">가이드</a>
+      <a href="https://macmini-jarvis.github.io/chatgpt-prompts-pack-store/" rel="noopener">스토어</a>
+    </div>
+  </nav>
+
+  <article class="card" style="margin-top:16px">
+    <p class="article-meta">실전 가이드 · 한국어 · 검수 필수</p>
+    <h1>고객응대·리뷰답글, 톤 유지하며 ChatGPT로 초안 자동화</h1>
+    
+<p>리뷰 답글과 고객 문의는 매일 쌓이지만, 매번 처음부터 쓰면 톤이 흔들립니다. ChatGPT로 <strong>초안 자동화</strong>는 가능하지만, 자동 전송까지 맡기면 위험합니다. '초안 → 사람 검수 → 발송' 흐름을 지키세요.</p>
+
+<h2>1. 답글 유형을 먼저 나누기</h2>
+<ul>
+  <li>긍정 리뷰 — 감사 + 구체 언급 + 가벼운 CTA</li>
+  <li>아쉬운 리뷰 — 공감 + 사실 확인 + 해결 채널</li>
+  <li>배송/환불 문의 — 정책 원문 기반</li>
+  <li>클레임 — 감정 진정 + 다음 절차 (법적 단정 금지)</li>
+</ul>
+<p>유형마다 프롬프트를 따로 두는 편이 품질이 좋습니다. 하나의 만능 프롬프트는 부정 리뷰에서 과도하게 밝거나, 긍정 리뷰에서 변명조가 되기 쉽습니다.</p>
+
+<h2>2. 자동화해도 되는 것 / 안 되는 것</h2>
+<ul>
+  <li>해도 됨: 초안 생성, 문장 길이 조절, 해요체 통일</li>
+  <li>조심: 환불 약속, 보상 금액, 법적 판단, 개인정보 재언급</li>
+  <li>금지에 가깝: 검수 없는 자동 게시/자동 메일 발송</li>
+</ul>
+
+<h2>3. 예시 프롬프트 — 긍정 리뷰</h2>
+<div class="prompt-box">긍정 리뷰 답글 5안을 작성하세요.
+
+[업종]: {업종}
+[상품]: {상품}
+[리뷰 요약]: {칭찬 포인트}
+[톤]: {톤}
+[CTA]: {실제 가능한 것만}
+
+조건: 2~4문장, 고객 실명 제외, 허위 혜택 금지, 해요체</div>
+
+<h2>4. 예시 프롬프트 — 부정·아쉬운 리뷰</h2>
+<div class="prompt-box">아쉬운 리뷰 답글 초안 3안을 작성하세요.
+
+[이슈 요약]: {이슈}
+[확인된 사실]: {사실}
+[가능한 조치]: {실제 가능한 조치}
+[연락 채널]: {주문번호 확인 후 채널}
+
+조건:
+- 공감 1문장 → 사실/조치 → 다음 단계
+- 변명·책임 전가 금지
+- 확정되지 않은 보상은 약속하지 말 것
+- 개인정보·주문 상세를 답글에 재서술하지 말 것</div>
+
+<h2>5. 운영 팁</h2>
+<p>자주 쓰는 답변은 '확정 템플릿'으로 저장하고, ChatGPT는 변형·톤 맞추기에만 쓰세요. 주간 단위로 답글 톤을 읽어 보며 브랜드 말투가 흔들리지 않았는지 점검하는 것이 좋습니다.</p>
+
+    
+<h2>6. 문의 DM·메일도 같은 원칙</h2>
+<p>리뷰 답글뿐 아니라 배송 문의, 사용 방법 질문, 환불 요청도 초안 자동화 대상입니다. 다만 정책이 바뀌면 프롬프트에 넣은 '실제 정책' 문단을 함께 업데이트해야 합니다. 예전 환불 규정이 프롬프트에 남아 있으면 잘못된 약속을 하게 됩니다.</p>
+<p>팀 또는 가족에게 응대를 맡기는 경우, 톤 가이드를 한 장으로 고정하세요. 해요체인지 합니다체인지, 이모지를 쓰는지, 보상 언급은 누가 승인하는지. ChatGPT는 그 가이드를 시스템처럼 매 프롬프트 상단에 붙여 쓰면 일관성이 올라갑니다.</p>
+<h2>7. 기록과 개선</h2>
+<p>잘 된 답글·문제가 된 답글을 월 1회 모아 보세요. 문제가 된 사례는 '금지 예시'로 프롬프트에 추가합니다. 잘 된 사례는 '좋은 예시'로 넣습니다. 이렇게 하면 모델이 브랜드 말투에 점차 가까워집니다. 그래도 최종 판단은 사람이 합니다.</p>
+<p>고객응대 프롬프트를 더 많이 쓰고 싶다면 풀팩의 응대 챕터를 확인하세요. 미리 맛보기는 <a href="../../free-sample/">무료 샘플의 리뷰답글·메일</a>로 가능합니다. 스토어 링크는 <a href="https://macmini-jarvis.github.io/chatgpt-prompts-pack-store/">여기</a>입니다. 어떤 경우에도 수익이나 리뷰 점수 상승을 보장하지 않습니다.</p>
+
+    <h2>관련 가이드</h2>
+    <div class="related"><a href="../product-detail-copy-prompt/">상세페이지 카피</a><a href="../chatgpt-prompt-recommend/">프롬프트 쓰는 법</a><a href="../instagram-caption-reels-hook/">인스타 캡션</a></div>
+    
+<div class="cta-box">
+  <p><strong>더 많은 실전 프롬프트가 필요하신가요?</strong><br>
+  무료 샘플로 먼저 써 보고, 풀팩은 스토어에서 계좌이체로 구매할 수 있습니다.</p>
+  <div class="cta-row">
+    <a class="btn btn-gold" href="https://macmini-jarvis.github.io/prompt-growth-hub/free-sample/">무료 샘플 받기</a>
+    <a class="btn btn-primary" href="https://macmini-jarvis.github.io/chatgpt-prompts-pack-store/" rel="noopener">스토어 바로가기</a>
+  </div>
+  <p class="muted" style="margin-top:10px;font-size:0.85rem">SKU: SNS30 4,900 / PROMPT80 9,900 / PROMPT80PLUS 19,900 · 계좌이체</p>
+</div>
+
+    <p class="disclaimer">본 글은 업무 도구 사용법 안내이며 매출·노출·수익을 보장하지 않습니다. 가짜 후기·과장 광고를 포함하지 않습니다.</p>
+  </article>
+
+  <footer class="footer">
+    <p>프롬프트 성장 허브 · 매출·수익을 보장하지 않습니다. AI 출력은 검수 후 사용하세요.</p>
+    <p style="margin-top:8px">
+      <a href="../../free-sample/">무료 샘플</a> ·
+      <a href="https://macmini-jarvis.github.io/chatgpt-prompts-pack-store/" rel="noopener">유료 팩 스토어</a>
+    </p>
+  </footer>
+</div>
+
+</body>
+</html>

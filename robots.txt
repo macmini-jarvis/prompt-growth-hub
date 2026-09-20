@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://macmini-jarvis.github.io/prompt-growth-hub/sitemap.xml
